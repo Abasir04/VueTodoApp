@@ -1,16 +1,17 @@
 <template>
     <div>
-        <form @submit.prevent="addTodo">
+        <form @submit.prevent="addTodo" class="flex">
             <input 
                 type="text" 
                 name="title" 
                 v-model='title'
                 placeholder="AddTodo..."
+                class="p-2 focus:outline-none border-b"
             >
             <input 
                 type="submit" 
-                value="Submit" 
-                class="btn"
+                value="SUBMIT"
+                class="inline-block bg-gray-700 border-none text-white py-2 px-5 cursor-pointer hover:bg-gray-900"
             >
         </form>
     </div>
@@ -49,5 +50,10 @@ export default {
 </script>
 
 <style scoped>
-
+    input[type="text"] {
+        flex: 10;
+    }
+    input[type="submit"] {
+        flex: 2;
+    }
 </style>

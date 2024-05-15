@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box-border m-0 p-0 font-sans leading-normal">
     <TodoHeader />
     <AddTodo 
       @add-Todo="addTodo"
